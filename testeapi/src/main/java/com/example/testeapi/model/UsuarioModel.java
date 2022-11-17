@@ -9,45 +9,39 @@ public class UsuarioModel {
 
     @Id
     public Integer codigo;
-    @Column (nullable = false, length = 50)
-    public String nome;
 
-    @Column (nullable = false, length = 10)
-    public String login;
+    @Column ( length = 3)
+    public String CodProdt;
 
-    @Column (nullable = false, length = 10)
-    public String senha;
+    @Column ( length = 20)
+    public String Grupo_IdentdLinhaBilat;
+
+    @Column ( length = 2)
+    public String Grupo_TpDeb_Cred;
+
+    @Column ( length = 20)
+    public String Grupo_ISPBIFCredtd;
+
+    @Column ( length = 20)
+    public String Grupo_ISPBIFDebtd;
+
+    @Column ( length = 20)
+    public String Grupo_VlrLanc;
+
+    @Column ( length = 20)
+    public String Grupo_CNPJNLiqdantDebtd;
+
+    @Column ( length = 20)
+    public String Grupo_NomCliDebtd;
+
+    @Column ( length = 20)
+    public String Grupo_CNPJNLiqdantCredtd;
+
+    @Column ( length = 20)
+    public String Grupo_NomCliCredtd;
+
+    @Column ( length = 20)
+    public String Grupo_TpTranscSLC;
 
 
-    public Integer getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
 }
